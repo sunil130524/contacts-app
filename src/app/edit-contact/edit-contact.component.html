@@ -39,9 +39,7 @@
           <input placeholder="State/Region" formControlName="state" />
           <input placeholder="Zip/Postal Code" formControlName="postalCode" />
           <select formControlName="addressType">
-            <option value="home">Home</option>
-            <option value="work">Work</option>
-            <option value="mobile">Other</option>
+            <option *ngFor="let addressType of addressTypes" [value]="addressType.value">{{addressType.title}}</option>
           </select>
         </div>
       </div>
