@@ -4,6 +4,7 @@ export interface Contact {
   lastName: string;
   dateOfBirth: Date | null;
   favoritesRanking: number | null;
+  personal: boolean;
   phone: Phone;
   address: Address;
 }
